@@ -1,0 +1,101 @@
+/* Pengaturan Dasar */
+html { scroll-behavior: smooth; }
+:root {
+    --primary-color: #036b46;
+    --accent-color: #f1c40f;
+    --text-dark: #2c3e50;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--text-dark);
+    background-color: #f4f7f6;
+}
+
+/* Header & Pengumuman */
+.pengumuman { background-color: #1a1a1a; color: #fff; padding: 5px 0; font-size: 0.9rem; font-weight: bold; }
+
+header { background-color: rgba(3, 107, 70, 0.95); color: white; padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 15px rgba(0,0,0,0.2); backdrop-filter: blur(10px); }
+.logo { font-size: 1.5rem; font-weight: bold; }
+nav a { color: white; text-decoration: none; margin-left: 20px; font-weight: 500; transition: 0.3s; }
+nav a:hover { color: var(--accent-color); }
+
+/* Efek Kaca (Glassmorphism) */
+.glass-effect { background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(8px); border-radius: 15px; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); border: 1px solid rgba(255, 255, 255, 0.5); }
+.section-box { padding: 40px; }
+
+/* Hero Section */
+.hero { text-align: center; padding: 100px 20px; margin: 40px 5%; border-radius: 15px; color: white; background: linear-gradient(rgba(3, 107, 70, 0.7), rgba(0, 0, 0, 0.7)), url('masjid uny.jpg') center/cover no-repeat; }
+.hero h1 { font-size: 3.5rem; margin-bottom: 10px; }
+.hero p { font-size: 1.2rem; max-width: 600px; margin: 0 auto 20px auto; }
+.waktu-sekarang { font-size: 1.3rem; font-weight: bold; color: var(--accent-color); background: rgba(0,0,0,0.3); display: inline-block; padding: 10px 20px; border-radius: 30px; margin-bottom: 20px; }
+.btn-primary { background-color: var(--accent-color); color: #000; padding: 12px 25px; text-decoration: none; font-weight: bold; border-radius: 50px; transition: 0.3s; display: inline-block; }
+.btn-primary:hover { background-color: #fff; color: var(--primary-color); transform: translateY(-3px); }
+
+/* Section Umum */
+.section { padding: 20px 5%; margin-bottom: 40px; }
+.section-title { text-align: center; font-size: 2.2rem; color: var(--primary-color); margin-bottom: 20px; border-bottom: 3px solid var(--accent-color); display: inline-block; padding-bottom: 10px; position: relative; left: 50%; transform: translateX(-50%); }
+.text-center { text-align: center; }
+
+/* Jadwal Sholat Desktop */
+.subtitle-jadwal { text-align: center; margin-bottom: 30px; font-weight: 500; color: #555;}
+.jadwal-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 15px; }
+.waktu-sholat { background: white; padding: 20px; border-radius: 15px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-top: 5px solid var(--primary-color); transition: 0.3s; display: flex; flex-direction: column; align-items: center; }
+.waktu-sholat:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(3, 107, 70, 0.2); }
+.waktu-info i { font-size: 1.5rem; color: var(--accent-color); margin-bottom: 8px; }
+.waktu-sholat h3 { margin: 0 0 10px 0; color: #555; font-size: 1.2rem; }
+.waktu-sholat p { font-size: 2rem; font-weight: bold; color: var(--primary-color); margin: 0; }
+
+/* Fasilitas */
+.fasilitas-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px; text-align: center; margin-top: 30px; }
+.fasilitas-item { padding: 20px; background: white; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); transition: 0.3s; }
+.fasilitas-item:hover { background: var(--primary-color); color: white; transform: translateY(-3px); }
+.fasilitas-item i { font-size: 2.5rem; margin-bottom: 15px; color: var(--accent-color); transition: 0.3s; }
+.fasilitas-item:hover i { color: #fff; }
+
+/* Slider Kajian */
+.slider-container { width: 100%; overflow-x: auto; padding: 20px 0; scrollbar-width: none; }
+.slider-container::-webkit-scrollbar { display: none; }
+.slider-wrapper { display: flex; gap: 25px; padding: 0 10px; scroll-snap-type: x mandatory; }
+.slider-item.kajian-card { flex: 0 0 auto; width: 320px; scroll-snap-align: center; background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.08); transition: 0.3s; }
+.slider-item.kajian-card:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0,0,0,0.15); }
+.kajian-card img { width: 100%; height: 200px; object-fit: cover; border-bottom: 3px solid var(--accent-color); }
+.kajian-content { padding: 25px; }
+.kajian-date { font-size: 0.85rem; color: #7f8c8d; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
+.kajian-content h3 { margin: 10px 0 0 0; color: var(--primary-color); }
+
+/* Footer */
+footer { text-align: center; margin-top: 60px; padding: 40px 20px; background: #e9efec; }
+.sosmed a { color: var(--primary-color); font-size: 2rem; margin: 0 15px; transition: 0.3s; }
+.sosmed a:hover { color: var(--accent-color); transform: scale(1.2); display: inline-block; }
+.footer-bottom { margin-top: 20px; border-top: 1px solid #ccc; padding-top: 20px; font-size: 0.9rem; color: #555; }
+
+/* ======== RESPONSIVE (KHUSUS UNTUK HP SAJA) ======== */
+@media (max-width: 768px) {
+    header { flex-direction: column; gap: 15px; padding: 20px; }
+    nav a { margin: 0 8px; font-size: 0.9rem; }
+    .hero { margin: 20px 5%; padding: 60px 15px; }
+    .hero h1 { font-size: 2.2rem; }
+    .section-box { padding: 25px 15px; }
+    .section-title { font-size: 1.8rem; }
+    
+    /* Ubah Jadwal Jadi List Vertikal Keren di HP */
+    .jadwal-container { grid-template-columns: 1fr; gap: 12px; }
+    .waktu-sholat { 
+        flex-direction: row; 
+        justify-content: space-between; 
+        align-items: center;
+        padding: 15px 25px; 
+        border-top: none; 
+        border-left: 5px solid var(--primary-color); 
+    }
+    .waktu-info { display: flex; align-items: center; gap: 15px; margin: 0; }
+    .waktu-info i { margin-bottom: 0; font-size: 1.3rem; }
+    .waktu-sholat h3 { margin: 0; font-size: 1.1rem; }
+    .waktu-sholat p { font-size: 1.5rem; }
+
+    /* Sesuaikan ukuran slider */
+    .slider-item.kajian-card { width: 280px; }
+}
