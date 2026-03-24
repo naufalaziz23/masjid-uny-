@@ -1,2 +1,1 @@
-# masjid-uny-
-website masjid university ngeri yogyakarta
+I developed a website for Masjid Mujahidin UNY using HTML, CSS, and JavaScript. This website was created because the mosque previously did not have a web platform to share information. Through this website, I aimed to provide a digital platform to deliver announcements, mosque activities, and religious programs to the congregation and the public in a more organized and accessible way. This project also helped me improve my front-end web development skills.
